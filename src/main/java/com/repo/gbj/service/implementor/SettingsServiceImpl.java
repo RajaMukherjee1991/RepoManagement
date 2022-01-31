@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.repo.gbj.dao.manager.SettingManager;
 import com.repo.gbj.model.UserSettings;
 import com.repo.gbj.service.SettingService;
+import com.repo.gbj.utils.TransactionalWithRollbackAndIsolation;
 
 @Service("settingService")
 public class SettingsServiceImpl implements SettingService{
@@ -29,6 +30,7 @@ public class SettingsServiceImpl implements SettingService{
 		this.settingManager = settingManager;
 	}
 
+	@TransactionalWithRollbackAndIsolation
 	public boolean updateSettings(UserSettings userSettings) {
 		return settingManager.updateSetting(userSettings);
 	}

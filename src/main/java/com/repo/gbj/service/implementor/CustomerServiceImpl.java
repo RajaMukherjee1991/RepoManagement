@@ -12,6 +12,7 @@ import com.repo.gbj.dao.manager.CustomerManager;
 import com.repo.gbj.model.Customer;
 import com.repo.gbj.model.datatype.Aadhar;
 import com.repo.gbj.service.CustomerService;
+import com.repo.gbj.utils.TransactionalWithRollbackAndIsolation;
 
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService{
@@ -32,6 +33,7 @@ public class CustomerServiceImpl implements CustomerService{
 		this.customerManager = customerManager;
 	}
 
+	@TransactionalWithRollbackAndIsolation
 	public void saveCustomer(Customer customer){
 			if(customer!=null){
 				customerManager.saveCustomer(customer);
@@ -48,6 +50,7 @@ public class CustomerServiceImpl implements CustomerService{
 		return customerList;
 	}
 
+	@TransactionalWithRollbackAndIsolation
 	public void updateCustomer(Customer customer) {
 		customerManager.updateCustomer(customer);
 	}

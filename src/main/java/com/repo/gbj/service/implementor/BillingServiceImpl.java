@@ -14,6 +14,7 @@ import com.repo.gbj.model.Billing.BillRangeType;
 import com.repo.gbj.model.Payment;
 import com.repo.gbj.service.BillingService;
 import com.repo.gbj.utils.DateUtil;
+import com.repo.gbj.utils.TransactionalWithRollbackAndIsolation;
 
 @Service("billingService")
 public class BillingServiceImpl implements BillingService{
@@ -35,6 +36,7 @@ public class BillingServiceImpl implements BillingService{
 	}
 
 	@Override
+	@TransactionalWithRollbackAndIsolation
 	public boolean saveBill(Billing billing) {
 		return  billingManager.saveBill(billing);
 	}
@@ -76,7 +78,7 @@ public class BillingServiceImpl implements BillingService{
 	}
 	
 
-	
+	@TransactionalWithRollbackAndIsolation
 	public boolean saveInterestPayment(Payment payment){
 		return billingManager.saveInterestPayment(payment);
 	}

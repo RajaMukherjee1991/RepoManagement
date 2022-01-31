@@ -14,6 +14,7 @@ import com.repo.gbj.model.Stock;
 import com.repo.gbj.model.Stock.StockType;
 import com.repo.gbj.service.StockService;
 import com.repo.gbj.utils.DateUtil;
+import com.repo.gbj.utils.TransactionalWithRollbackAndIsolation;
 import com.repo.gbj.utils.DateUtil.DateFormat;
 
 @Service("stockService")
@@ -41,10 +42,12 @@ public class StockServiceImpl implements StockService{
 	
 	
 
+	@TransactionalWithRollbackAndIsolation
 	public boolean saveStock(Stock stock) {
 		return stockManager.saveStock(stock);
 	}
 	
+	@TransactionalWithRollbackAndIsolation
 	public boolean updateStock(Stock stock){
 		return stockManager.updateStock(stock);
 	}
@@ -65,6 +68,7 @@ public class StockServiceImpl implements StockService{
 	 * with a new barcode.
 	 */
 	@Override
+	@TransactionalWithRollbackAndIsolation
 	public void updateStockStatus(Stock currentStock) throws Exception {
 		logger.info("Search Stock for barcode "+ currentStock.getBarcode());
 			Stock originalStock = stockManager.fetchStockByBarcode(currentStock.getBarcode());

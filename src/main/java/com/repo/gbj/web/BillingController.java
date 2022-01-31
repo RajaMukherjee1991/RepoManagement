@@ -20,6 +20,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -389,8 +390,8 @@ public class BillingController {
 	 * }
 	 */
 	
-	/*@RequestMapping(value = "/delete")
-	public String deleteBill(){
-		
-	}*/
+	@RequestMapping(value = "/delete/{billbarcode}",method=RequestMethod.POST)
+	public @ResponseBody String deleteBill(@PathVariable("billbarcode") String billbarcode, Model model){
+		return null;
+	}
 }
