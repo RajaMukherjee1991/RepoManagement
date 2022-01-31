@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mortgage_invoice" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f66bb8b9-3e8b-4bda-b3aa-f2c6eb36ed5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="244"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="742"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="customerMortgageInvoice" class="com.repo.gbj.model.jasper.report.view.CustomerMortgageInvoice"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<frame>
+				<reportElement x="140" y="0" width="269" height="125" uuid="bc4dd6b4-43c3-4ee4-b590-19238c12f06b"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="30" width="259" height="25" uuid="8239423f-745e-4e43-8f45-6328150d7ce5">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="Cambria Math" size="15" isBold="true"/>
+					</textElement>
+					<text><![CDATA[GHOSH BROTHERS JEWELLERS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="55" width="259" height="24" uuid="42216a0d-b0f9-496a-a19b-ac95a2a52c78"/>
+					<textElement textAlignment="Center">
+						<font fontName="Cambria Math" size="14"/>
+					</textElement>
+					<text><![CDATA[8A, Ekbalpul Lane, Kolkata -700023]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="79" width="259" height="20" uuid="517aea07-15cd-4449-b1e9-7bd4992feb76"/>
+					<textElement textAlignment="Center">
+						<font fontName="Cambria Math" size="14"/>
+					</textElement>
+					<text><![CDATA[Mob : 9831392410 | 9804347895]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="100" width="258" height="19" uuid="52761676-be47-4235-a714-6860df1f2ccc"/>
+					<textElement textAlignment="Center">
+						<font fontName="Cambria Math" size="14"/>
+					</textElement>
+					<text><![CDATA[License No : N/59/2011]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="6" width="258" height="21" forecolor="#FA0E0A" uuid="6d326b01-7990-4081-8c99-5128e06771af">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0" lineStyle="Solid"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FC0C08"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="Cambria Math" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Valid For one Year]]></text>
+				</staticText>
+			</frame>
+			<line>
+				<reportElement x="0" y="189" width="550" height="1" uuid="52d9943c-2987-4ccc-b570-197f0cfe9cf2"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="12" width="30" height="14" uuid="3c48a0be-4dfc-4fcc-86ad-48ef220b336a"/>
+				<textElement>
+					<font fontName="Cambria Math" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="12" width="30" height="20" uuid="b19258f6-9ce3-40c9-90dc-0a50422407e2"/>
+				<textElement>
+					<font fontName="Cambria Math" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="200" width="550" height="40" uuid="3e2c4f78-b272-4750-b18e-680397234a4f"/>
+				<textElement>
+					<font fontName="Cambria Math" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Statement showing details of conditions of the loan etc. Prescribed under Rule 19(2) of section 24(2)(a) of the Bengal Money Lenders Act, 1940.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="163" width="90" height="20" uuid="7c47f57a-a6dc-487d-a403-33e24087f399"/>
+				<textElement>
+					<font fontName="Cambria Math" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount of loan Rs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="163" width="60" height="20" uuid="c9026aa9-90e5-4c24-ad29-57812e075cb0"/>
+				<textElement>
+					<font fontName="Cambria Math" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Weight]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="530" width="547" height="133" uuid="2af329a2-7b0d-4932-8ca6-329ccb2d30c7"/>
+				<staticText>
+					<reportElement x="0" y="8" width="547" height="29" uuid="085c7324-da6c-4dce-b847-1e7d040fed9c"/>
+					<textElement>
+						<font fontName="Cambria Math" size="13"/>
+					</textElement>
+					<text><![CDATA[I undertake to repay the personal loan availed by me within or before the due date along with interest. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="44" width="546" height="49" uuid="2b4559af-0cc5-4418-9087-34009954718f"/>
+					<textElement>
+						<font fontName="Cambria Math" size="13"/>
+					</textElement>
+					<text><![CDATA[The gold ornaments, described above which belongs to me and on which I have absolute right is handed over as collateral security herewith, I have understood the terms and conditions stated overeaf and I agree and accept the same.]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement key="" x="0" y="677" width="549" height="122" uuid="08e564af-35db-45be-bb26-9eef46b22683"/>
+				<staticText>
+					<reportElement x="0" y="-50" width="545" height="30" uuid="98293f11-31cb-4c8b-9643-58e0865f99d9"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Cambria Math" size="13"/>
+					</textElement>
+					<text><![CDATA[The above statement are to best of my knowledge]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="20" width="70" height="25" uuid="d4e7c6ed-49b3-433b-ba9a-10a7185998ed"/>
+					<textElement>
+						<font fontName="Cambria Math" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Signature]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="130" y="70" width="316" height="30" forecolor="#FC0C08" uuid="82ebd09e-f83a-4adb-a961-7bdb240b7f15"/>
+					<box>
+						<pen lineColor="#FC0703"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FC0703"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FC0703"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FC0703"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FC0703"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Cambria Math" size="14"/>
+					</textElement>
+					<text><![CDATA[ Closed: SUNDAY Full and Monday upto 4 p.m.]]></text>
+				</staticText>
+				<line>
+					<reportElement x="84" y="40" width="146" height="1" uuid="b77783a3-0410-469d-bb64-07bf75674fda"/>
+					<graphicElement>
+						<pen lineWidth="1.0" lineStyle="Dashed" lineColor="#0D1D63"/>
+					</graphicElement>
+				</line>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="242" width="550" height="268" backcolor="#FAFBFF" uuid="ef9b65ac-88bd-4a53-88cc-d75a3fb41367"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+				</box>
+				<staticText>
+					<reportElement x="8" y="10" width="80" height="20" uuid="ad817fd8-cba3-4e96-8127-5854c58ca8fd"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Date of Loan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="308" y="10" width="80" height="20" uuid="06087060-d1df-49e6-965f-0db0bae5c10b"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Phone Number]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="8" y="40" width="80" height="20" uuid="ae8fc2c4-3675-4fb8-bd17-a756c530090d"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Name of Debtor]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="8" y="70" width="80" height="20" uuid="233e495d-df22-4c0a-bace-71d34db2ec4a"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Address]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="8" y="99" width="80" height="20" uuid="70dc151c-f13a-46b3-9342-059a787d84d5"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Landlord]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="8" y="128" width="282" height="22" uuid="7b03605b-f078-4d23-8ffe-037365af501d"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Details of Gold Ornaments Offered as collateral security]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="8" y="169" width="80" height="20" uuid="5a286e61-f006-43dc-968e-f7f69b14d39d"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Gross Weight]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="8" y="199" width="80" height="20" uuid="081efb43-6eae-4860-bc12-5fbd6d536512"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Net Weight]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="8" y="228" width="100" height="20" uuid="a975f3e3-b7ca-44d9-a6dc-e3b78aa8ac39"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Amount of Loan Rs]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="310" y="169" width="50" height="20" uuid="a175ea83-12e2-4af0-978d-79bedc8ac121"/>
+					<textElement>
+						<font fontName="Cambria Math" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Deduction]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="94" y="10" width="81" height="20" backcolor="#FAFAFC" uuid="d5d7d883-36b1-4c6e-a0e5-8cc24f132648"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStockEntryDate().toString()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="394" y="10" width="100" height="20" backcolor="#FAFAFC" uuid="f5c444f7-36bb-4d6c-b468-6a0923f6a5b5"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getCustomer().getPrimarymobilenumber()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="94" y="40" width="150" height="20" backcolor="#FAFAFC" uuid="705dfba6-6aa5-4ef4-b0ad-0277d5a2d8f3"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getCustomer().getFullname()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="94" y="70" width="150" height="20" backcolor="#FAFAFC" uuid="e3d1cf50-f1a4-4577-8804-3e5c7697bd15"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getCustomer().getAddress1()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="94" y="100" width="100" height="19" backcolor="#FAFAFC" uuid="ea3087ec-4729-4edf-9afe-aa07d54fb9cc"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getCustomer().getLandlord()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="301" y="126" width="204" height="22" backcolor="#FAFAFC" uuid="636d4239-d92a-420d-be44-7d4a329ca00a"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStock_desc()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="113" y="169" width="100" height="20" backcolor="#FAFAFC" uuid="9ee0c8ee-cc63-4d5e-8a1a-d06c40684e6b"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStockGrossWeight().toString()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="374" y="169" width="90" height="20" backcolor="#FAFAFC" uuid="2d1d07d9-279a-4bac-99ce-52786eb96b4a"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStockDeductions().toString()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="114" y="227" width="100" height="20" backcolor="#FAFAFC" uuid="24e90897-6967-47c0-b842-3922625bd8b4"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStockPrice().toString()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="250" y="70" width="150" height="20" backcolor="#FAFAFC" uuid="8760e7a9-d8d6-4f6f-babc-e61b50a89af3"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getCustomer().getAddress2()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="114" y="199" width="80" height="20" backcolor="#FAFAFC" uuid="83ef1a0a-6b3d-4834-81f3-affada20f9b9"/>
+					<box>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#10097D"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font fontName="Cambria Math"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStockWeight().toString()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField>
+				<reportElement x="65" y="163" width="80" height="20" uuid="7d9c38bf-6499-4272-b2f0-9a38b4a36af0"/>
+				<textElement>
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStockWeight().toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="164" width="80" height="23" uuid="554b143a-77a3-471d-aacb-61d14967cef8"/>
+				<textElement>
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getStockPrice().toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="35" width="140" height="15" uuid="4244ee22-e099-4f78-96f8-15bf4b9721a0"/>
+				<textElement>
+					<font fontName="Cambria Math" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerMortgageInvoice}.getMortgageStock().getBill_no()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="141" y="128" width="258" height="21" forecolor="#FA0E0A" uuid="fd787c8a-948a-4588-8bc9-e85ebcc05bea">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FA0E0A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FA0E0A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FA0E0A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FA0E0A"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria Math" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Personal loan receipt]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="461" y="12" width="80" height="18" uuid="a1dda19c-56b0-4bd8-b979-a3bbc755fedd"/>
+				<textElement>
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="total_mortgage" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="319a5a2a-82c1-4bc8-87d4-51c1ffaa3179">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0EDFC">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#DCDDF5">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="activemortgage_dataset" uuid="4483ef4a-cb8d-4c31-ba9f-74bc9d53347d">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<parameter name="CollectionBeanParam" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="stockID" class="java.lang.Integer"/>
+		<field name="stockPrice" class="java.math.BigDecimal"/>
+		<field name="stockWeight" class="java.math.BigDecimal"/>
+		<field name="stockEntryDate" class="java.lang.String"/>
+		<field name="stockExitDate" class="java.lang.String"/>
+		<field name="stock_desc" class="java.lang.String"/>
+		<field name="barcode" class="java.lang.Integer"/>
+	</subDataset>
+	<parameter name="CollectionBeanParam" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="360" y="80" width="70" height="22" uuid="f9e86a70-e89c-41fe-88d7-aed8cb657ce0"/>
+				<textElement>
+					<font fontName="Cambria Math" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Download Date]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="440" y="82" width="86" height="18" uuid="8e5b16f4-e6e8-4d5f-a9bc-7763a51356c5"/>
+				<textElement>
+					<font fontName="Cambria Math" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="380" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="180" width="570" height="200" uuid="ced470ad-8283-4b8c-9829-ab113b3a2aef">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="activemortgage_dataset" uuid="072ceb62-279b-4689-ac8b-a9ab747b0738">
+						<dataSourceExpression><![CDATA[$P{CollectionBeanParam}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="40" uuid="25e63270-699d-4d20-8fc0-df7d200e5896">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="20" uuid="1ac90745-8f5f-441c-a516-b005b20992e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[Stock Id]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="21">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="40" height="21" uuid="80b5d45e-257e-4c1f-8e05-5ae4168d7859"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stockID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="73" uuid="9236a424-b3fc-4172-9e8b-28f47113f369">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="73" height="20" uuid="48a47844-1e60-4443-bd5b-7440639068fd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[Price]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="21">
+							<textField>
+								<reportElement x="0" y="0" width="73" height="21" uuid="947038fb-ddf4-4d0c-bea7-63d18318659e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stockPrice}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="72" uuid="ec407fa4-7a07-4d6a-ab4b-a95dc714ed7b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="72" height="20" uuid="6fdac5de-9a17-45e7-86e9-df140b74563f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[Weight]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="21">
+							<textField>
+								<reportElement x="0" y="0" width="72" height="21" uuid="662949ef-3fcb-4e76-8dc9-2da7787fd83f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stockWeight}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="a5c9411b-446d-4ee6-b46c-f7103b366f46">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="20" uuid="f7b6da0d-aebb-4c95-921c-30a7feb489e7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[Entry Date]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="21">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="21" uuid="12546251-8b9d-4976-a5e8-5d46f3a38cdd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stockEntryDate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="108" uuid="19f9512a-b5a6-446e-b98e-bdf7b19362aa">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="108" height="20" uuid="0d7740af-4a97-4940-a7a4-c99c092be5a8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[Status]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="21">
+							<textField>
+								<reportElement x="0" y="0" width="108" height="21" uuid="12b91b1f-cefd-4dd6-a2e0-5537e655dfb7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stockExitDate}=="null"?"Active":"Inactive"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="107" uuid="ae7b0970-193b-4f38-bf88-2d33dc3395c9">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="107" height="20" uuid="a3386224-8498-42df-979a-0bf345456aa9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[Stock Detail]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="21">
+							<textField>
+								<reportElement x="0" y="0" width="107" height="21" uuid="63b8ab57-b96e-4474-a426-c8aea07eaf5c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stock_desc}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="15ed2ae1-28cb-4550-9996-33efbc50d05b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="20" uuid="740621ad-5589-418d-910f-a3148459e13c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[Barcode]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="21">
+							<componentElement>
+								<reportElement x="0" y="0" width="80" height="21" uuid="d0622971-9e3c-4d82-921e-4bc0cd8d0f51"/>
+								<jr:Code128 textPosition="bottom" verticalQuietZone="0.0">
+									<jr:codeExpression><![CDATA[$F{barcode}.toString()]]></jr:codeExpression>
+								</jr:Code128>
+							</componentElement>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<frame>
+				<reportElement x="0" y="5" width="269" height="100" uuid="92cbefb4-65f6-4c86-84fe-b4ea84db437e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="1" width="259" height="25" forecolor="#F70B07" uuid="f86862a0-0529-4654-805e-af240b3deb80">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left">
+						<font fontName="Cambria Math" size="13" isBold="true"/>
+					</textElement>
+					<text><![CDATA[GHOSH BROTHERS JEWELLERS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="26" width="259" height="24" uuid="31fa2972-e44d-4457-a3d4-6bb31ecb174f"/>
+					<textElement textAlignment="Left">
+						<font fontName="Cambria Math" size="12"/>
+					</textElement>
+					<text><![CDATA[8A, Ekbalpul Lane, Kolkata -700023]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="50" width="259" height="20" uuid="7921374a-b280-4a5d-baef-df745bbfa1c0"/>
+					<textElement textAlignment="Left">
+						<font fontName="Cambria Math" size="12"/>
+					</textElement>
+					<text><![CDATA[Mob : 9831392410 | 9804347895]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="71" width="258" height="19" uuid="f4879e04-1615-447b-97bb-b5fead2da740"/>
+					<textElement textAlignment="Left">
+						<font fontName="Cambria Math" size="12"/>
+					</textElement>
+					<text><![CDATA[License No : N/59/2011]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="370" y="15" width="120" height="38" forecolor="#0F0FBD" uuid="ed8d0c01-917f-4ffc-89aa-3946d70efbf5"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock List]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="65" splitType="Stretch">
+			<textField>
+				<reportElement x="450" y="35" width="100" height="30" uuid="c332d62a-77e3-421c-af4e-477c9c27a4a8"/>
+				<textElement>
+					<font fontName="Cambria Math" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

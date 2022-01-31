@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="stock_print" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2e87679f-7ce4-40eb-b180-d7bc3064dfd1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="Dataset1" uuid="25123fc3-b306-434a-9049-0360ffd8abac">
+		<field name="base64Image" class="java.lang.String">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="stockImages" class="com.repo.gbj.model.jasper.report.view.StockImages"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="210" splitType="Stretch">
+			<componentElement>
+				<reportElement x="13" y="10" width="528" height="200" uuid="896a0cd7-e063-423a-a40d-f44007d99067"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="Dataset1" uuid="2dc2080a-b9f7-4fdc-b0f4-9c90ad845997">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{stockImages}.getBase64ImageList())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="200" width="528">
+						<frame>
+							<reportElement x="14" y="10" width="500" height="180" uuid="579df2bd-cff4-494f-bb92-971ec6ee21d7"/>
+							<box>
+								<pen lineWidth="0.5" lineStyle="Dashed"/>
+							</box>
+							<staticText>
+								<reportElement x="5" y="27" width="100" height="20" uuid="f756bbc1-1dd4-42da-b3c7-3ffc59ef6481"/>
+								<textElement>
+									<font fontName="Cambria Math" size="10"/>
+								</textElement>
+								<text><![CDATA[Item Name]]></text>
+							</staticText>
+							<textField>
+								<reportElement x="115" y="24" width="170" height="27" uuid="0cc5d18e-1e65-4da7-a872-790cd5f4a1c8"/>
+								<textElement>
+									<font fontName="Cambria Math" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+							</textField>
+							<image>
+								<reportElement x="305" y="4" width="185" height="168" uuid="5f911ec0-1ad4-4c53-ac44-ef529b67ea9d"/>
+								<imageExpression><![CDATA[new ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($F{base64Image}.getBytes()))]]></imageExpression>
+							</image>
+						</frame>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

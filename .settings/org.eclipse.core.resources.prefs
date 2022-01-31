@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/main/resources/jasperreports/customer_item_detail_bill_p2.jrxml=UTF-8
+encoding//src/main/resources/jasperreports/customer_mortgage_invoice_copy.jrxml=UTF-8
+encoding//src/main/resources/jasperreports/customer_sales_billing\ items_p1.jrxml=UTF-8
+encoding//src/main/resources/jasperreports/seller_mortgage_invoice_copy.jrxml=UTF-8
+encoding//src/main/resources/jasperreports/stock_print.jrxml=UTF-8
+encoding//src/main/resources/jasperreports/total_mortgage.jrxml=UTF-8
+encoding//src/main/webapp/WEB-INF/views/jsp/users/billing/billing-tab-basicoverview.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/jsp/users/customer/customer.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/jsp/users/customer/customerdetails.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/jsp/users/dashboard/dashboard_details.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/jsp/users/stock/stock-adder.jsp=UTF-8
+encoding//src/main/webapp/resources/css/dataTables.bootstrap4.min.css=UTF-8
